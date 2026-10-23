@@ -21,8 +21,8 @@ so the output of one step plugs directly into the next.
 Clone the repository and install it in editable mode:
 
 ```bash
-git clone https://github.com/<your-username>/netsci-toolkit.git
-cd netsci-toolkit
+git clone https://github.com/JacopoConti/netsci_toolkit.git
+cd netsci_toolkit
 pip install -e .
 ```
 
