@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "netsci-toolkit"
+version = "0.1.0"
+description = "A small network science toolkit: generators, degree distributions, null models and community detection."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Jacopo Conti" }]
+dependencies = [
+    "numpy",
+    "networkx>=3.0",
+    "scikit-learn",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/netsci_toolkit"]
